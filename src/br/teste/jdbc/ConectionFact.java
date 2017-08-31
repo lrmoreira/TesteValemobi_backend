@@ -23,11 +23,11 @@ public class ConectionFact {
 				System.out.println("Conectado");
 				
 			   }catch(ClassNotFoundException e) {
-				   //String Mensagem = "Falha ao conectar ao banco";
-				   System.out.println("Erro de Drive"+ e.getMessage());
+				   //throw new SQLException(e);
+				    System.out.println("Erro de Drive"+ e.getMessage());
 				   
 			   }catch(SQLException e) {
-				//	String Mensagem = "Falha ao conectar ao banco";
+				 //  throw new RuntimeException(e);
 					System.out.println("Erro ao Conectar\n"+e.getStackTrace());
 				}
 			
